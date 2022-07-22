@@ -4,20 +4,20 @@ import { Radio, Box, Text, Heading, VStack, FormControl, Input, Link, Button, HS
 const Login = () => {
   return <NativeBaseProvider>
     <Center w="100%" h="100%">
-     <Box w="100%" h="100%" bgColor="white" alignItems="center">
+     <Box w="100%" h="100%" bgColor="indigo.200" alignItems="center">
         <Box safeArea p="1" py="60" w="100%" maxW="300">
 
-        <Heading size="lg" fontWeight="600" color="coolGray.800" _dark={{
-            color: "warmGray.50"
+        <Heading size="lg" fontWeight="700" color="coolGray.800" _dark={{
+            color: "warmGray.800"
         }}>
           Welcome!!
         </Heading>
         <Heading mt="1" _dark={{
-        color: "warmGray.200"
-    }} color="coolGray.600" fontWeight="medium" size="xs">
+        color: "warmGray.900"
+    }} color="coolGray.900" fontWeight="700" size="xs">
           Sign in to continue!
         </Heading>
-        <Text>Choose Your Role</Text>
+        <Text fontWeight="400" fontFamily="" py="5" color="warmGray.500">Choose Your Role</Text>
         <Radio.Group name="exampleGroup" defaultValue="1" accessibilityLabel="pick a size">
       <Stack direction={{
       base: "row",
@@ -25,8 +25,8 @@ const Login = () => {
     }} alignItems={{
       base: "flex-start",
       md: "center"
-    }} space={4} w="75%" maxW="300px" py="4">
-        <Radio value="1" colorScheme="green" size="sm" my={1}>
+    }} space={4} w="75%" maxW="300px" py="0">
+        <Radio value="1" colorScheme="indigo" size="sm" my={1}>
           Admin
         </Radio>
         <Radio value="2" colorScheme="green" size="sm" my={1}>
@@ -40,12 +40,12 @@ const Login = () => {
 
         <VStack space={3} mt="5">
           <FormControl>
-            <FormControl.Label>Email ID</FormControl.Label>
-            <Input />
+            <FormControl.Label>Username</FormControl.Label>
+            <Input variant="rounded" placeholder="Username"  borderColor="gray.500" />
           </FormControl>
           <FormControl>
             <FormControl.Label>Password</FormControl.Label>
-            <Input type="password" />
+            <Input variant="rounded" type="password" placeholder="password" borderColor="gray.500" />
             <Link _text={{
                 fontSize: "xs",
                 fontWeight: "500",
@@ -54,7 +54,7 @@ const Login = () => {
               Forget Password?
             </Link>
           </FormControl>
-          <Button mt="5" colorScheme="indigo">
+          <Button mt="5" colorScheme="indigo" borderRadius="25">
             Sign in
           </Button>
           <HStack mt="6" justifyContent="center">
