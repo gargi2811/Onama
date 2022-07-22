@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from './screens/login'
 import Register from './screens/register'
 
-const {Navigator, Screen} = createNativeStackNavigator();
+const { Navigator, Screen } = createNativeStackNavigator();
 
 function App() {
   return (

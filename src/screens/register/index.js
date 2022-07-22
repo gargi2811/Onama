@@ -64,7 +64,7 @@ function Register() {
               </Button>
             </VStack>
           </Box>
-        </Box></Center></NativeBaseProvider >
+        </Box></Center></NativeBaseProvider>
   );
 }
 
