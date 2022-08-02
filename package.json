@@ -11,14 +11,8 @@
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.3.2",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     "@react-navigation/drawer": "^6.4.3",
     "@react-navigation/material-top-tabs": "^6.2.2",
->>>>>>> fd39dbc1ba43c2972ab18f765138fb94da1ff16f
-=======
->>>>>>> cfa18897ef36e4811f608ba95945aa27b5265703
     "@react-navigation/native": "^6.0.11",
     "@react-navigation/native-stack": "^6.7.0",
     "native-base": "^3.4.9",

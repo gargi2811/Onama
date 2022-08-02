@@ -67,11 +67,4 @@ function Register() {
   );
 }
 
-export default RegisterScreen
-
-  < View style = {{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Register Screen</Text>
-    </ >
-  );
-}
 export default Register;
