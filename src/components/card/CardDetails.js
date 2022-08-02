@@ -60,6 +60,10 @@ function CardDetails() {
           <Text>hello</Text>
           <Text>hello</Text>
           <Text>hello</Text>
+          <Text>hello</Text>
+          <Text>hello</Text>
+          <Text>hello</Text>
+          <Text>hello</Text>
 
           <Button
             style={{
