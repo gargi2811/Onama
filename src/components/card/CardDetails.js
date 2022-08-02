@@ -53,24 +53,6 @@ function CardDetails() {
           />
         </Box>
         <Center>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-          <Text>hello</Text>
-
           <Button
             style={{
               height: 60,
