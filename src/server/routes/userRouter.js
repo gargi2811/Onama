@@ -16,8 +16,6 @@ router.post(
   signup,
 );
 
-<<<<<<< HEAD
-=======
 // router.get(
 //   '/signup',
 //   [
