@@ -6,12 +6,12 @@ uuidv4();
 
 const userSchema = new mongoose.Schema(
   {
-    // name: {
-    //   type: String,
-    //   required: true,
-    //   maxlength: 32,
-    //   trim: true,
-    // },
+    name: {
+      type: String,
+      required: true,
+      maxlength: 32,
+      trim: true,
+    },
     lastname: {
       type: String,
       maxlength: 32,
