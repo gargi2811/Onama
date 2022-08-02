@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'native-base';
 
-function Profile() {
+function GoResult() {
   return (
     <View>
-      <Text>Hello Profile!</Text>
+      <Text>Jayesh</Text>
     </View>
   );
 }
 
-export default Profile;
+export default GoResult;

@@ -5,6 +5,9 @@ import Login from './screens/login'
 import Register from './screens/register'
 
 const { Navigator, Screen } = createNativeStackNavigator();
+import Navigator from './routes';
+import { NativeBaseProvider } from 'native-base';
+// import {Native}
 
 function App() {
   return (

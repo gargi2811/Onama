@@ -1,8 +1,9 @@
 
 import { Stack, Box, Heading, VStack, FormControl, Radio, Input, Button, Center, NativeBaseProvider } from "native-base";
+import React from 'react';
+import { View, Text } from 'react-native';
 
-function RegisterScreen() {
-  const [value, setValue] = React.useState("one");
+function Register() {
   return (
     <NativeBaseProvider>
       <Center w="100%" h="100%">
@@ -68,3 +69,9 @@ function RegisterScreen() {
 
 export default RegisterScreen
 
+  < View style = {{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <Text>Register Screen</Text>
+    </ >
+  );
+}
+export default Register;
