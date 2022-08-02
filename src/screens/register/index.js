@@ -58,7 +58,7 @@ function RegisterScreen() {
                 <FormControl.Label>Confirm Password</FormControl.Label>
                 <Input type="password" />
               </FormControl>
-              <Button mt="10" bg="#008080">
+              <Button mt="5" bg="#008080">
                 Register
               </Button>
             </VStack>
