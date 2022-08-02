@@ -16,8 +16,6 @@ router.post(
   signup,
 );
 
-<<<<<<< HEAD
-=======
 // router.get(
 //   '/signup',
 //   [
@@ -37,6 +35,5 @@ router.post(
 //   signup,
 // );
 
->>>>>>> 005738f1391d45020633c3740dbae10d78b48b13
 router.post('/signin', signin);
 module.exports = router;
