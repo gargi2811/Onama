@@ -1,19 +1,20 @@
 import * as React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from '../Home';
-import CardDetails from '../../../components/Sellercard/CardDetails';
+import GoResult from './GoResult';
 
-const { Navigator, Screen } = createNativeStackNavigator();
+const {Navigator, Screen} = createNativeStackNavigator();
 
 function App() {
   return (
     <Navigator
-      initialRouteName="HomeNavigator"
+      initialRouteName="Home"
       screenOptions={{
         headerShown: false,
       }}>
-      <Screen name="HomeNavigator" component={Home} />
-      <Screen name="CardDetails" component={CardDetails} />
+      <Screen name="Home" component={Home} />
+      <Screen name="GoResult" component={GoResult} />
     </Navigator>
   );
 }
