@@ -5,9 +5,7 @@ import Login from '../screens/login';
 import Register from '../screens/register';
 import Seller from './sellerNavigator';
 import Buyer from './buyerNavigator';
-
 const {Navigator, Screen} = createNativeStackNavigator();
-
 function App() {
   return (
     <NavigationContainer>

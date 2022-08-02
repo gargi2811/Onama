@@ -13,7 +13,6 @@ function SettingsScreen() {
     </View>
   );
 }
-
 const {Screen, Navigator} = createBottomTabNavigator();
 
 export default function SellerNavigator() {
