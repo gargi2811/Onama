@@ -1,5 +1,5 @@
 import React from 'react';
-import {VStack, Input, Box, Divider, View, Center} from 'native-base';
+import { VStack, Input, Box, Divider, View, Center } from 'native-base';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 function SearchBar() {
@@ -25,7 +25,7 @@ function SearchBar() {
               py="2"
               px="4"
               fontSize="14"
-              InputLeftElement={<Icon name="search" size={25} color="blue" />}
+              InputLeftElement={<Icon name="search" size={30} color="blue" />}
               InputRightElement={<Icon name="mic" size={25} color="blue" />}
             />
           </VStack>
