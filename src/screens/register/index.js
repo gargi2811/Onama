@@ -1,14 +1,12 @@
-import React from 'react'
-import { View, Text } from 'react-native';
+
 import { Stack, Box, Heading, VStack, FormControl, Radio, Input, Button, Center, NativeBaseProvider } from "native-base";
 
-function Register() {
+function RegisterScreen() {
   const [value, setValue] = React.useState("one");
   return (
     <NativeBaseProvider>
       <Center w="100%" h="100%">
         <Box w="100%" h="100%" bg="blueGray.100">
-
           <Box safeArea p="2" w="90%" maxW="500" py="6" alignSelf="center">
             <Heading size="lg" color="muted.900" fontWeight="300">
               Welcome
@@ -59,7 +57,7 @@ function Register() {
                 <FormControl.Label>Confirm Password</FormControl.Label>
                 <Input type="password" />
               </FormControl>
-              <Button mt="5" colorScheme="pink">
+              <Button mt="5" bg="#008080">
                 Register
               </Button>
             </VStack>
@@ -68,4 +66,5 @@ function Register() {
   );
 }
 
-export default Register
+export default RegisterScreen
+

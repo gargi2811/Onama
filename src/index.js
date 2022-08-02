@@ -8,13 +8,9 @@ const { Navigator, Screen } = createNativeStackNavigator();
 
 function App() {
   return (
-    <NavigationContainer>
-      <Navigator initialRouteName="Register">
-        <Screen name="Login" component={Login} />
-        <Screen name="Register" component={Register} />
-      </Navigator>
-    </NavigationContainer>
+    <NativeBaseProvider>
+      <Navigator />
+    </NativeBaseProvider>
   );
 }
-
 export default App;
