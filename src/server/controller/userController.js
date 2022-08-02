@@ -36,12 +36,7 @@ exports.signin = (req, res) => {
       });
     }
 
-    //Authenticate
-    // if (!user.authenticate(password)) {
-    //   return res.status(400).json({
-    //     error: 'Email and password do not match',
-    //   });
-    // }
+  
 
     //Create token
     const token = jwt.sign({_id: user._id}, process.env.SECRET);
