@@ -21,12 +21,14 @@ function SearchBar() {
               placeholder="Search"
               width="100%"
               borderRadius="4"
-              borderColor="blue"
+              borderColor="#008080"
               py="2"
-              px="4"
+              px="5"
               fontSize="14"
-              InputLeftElement={<Icon name="search" size={25} color="blue" />}
-              InputRightElement={<Icon name="mic" size={25} color="blue" />}
+              InputLeftElement={
+                <Icon name="search" size={25} color="#008080" />
+              }
+              InputRightElement={<Icon name="mic" size={25} color="#008080" />}
             />
           </VStack>
         </VStack>
