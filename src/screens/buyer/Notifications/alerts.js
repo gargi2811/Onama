@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'native-base';
 
-function GoResult() {
+function Alert() {
   return (
     <View>
-      <Text>Jayesh</Text>
+      <Text>List of alerts will be shown here!!</Text>
     </View>
   );
 }
 
-export default GoResult;
+export default Alert;

@@ -1,6 +1,7 @@
 import {Box} from 'native-base';
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+//import LinearGradient from 'react-native-linear-gradient';
 
 export default class Profile extends Component {
   render() {
@@ -21,7 +22,7 @@ export default class Profile extends Component {
               <Text style={styles.description}>
                 Address : Somesh colony, Behind Kalamandir, Nanded-431 602
               </Text>
-              <Text style={styles.info}>Type of Waste : Mixed Waste</Text>
+
               <TouchableOpacity style={styles.buttonContainer}>
                 <Text style={{color: 'white'}}>Edit Profile</Text>
               </TouchableOpacity>

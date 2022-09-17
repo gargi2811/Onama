@@ -1,82 +1,118 @@
-import React from 'react';
-import { Radio, Box, Text, Heading, VStack, FormControl, Input, Link, Button, HStack, Center, NativeBaseProvider,Stack } from "native-base";
+import React, {useState} from 'react';
+import {
+  Radio,
+  Box,
+  Text,
+  Heading,
+  VStack,
+  FormControl,
+  Input,
+  RadioGroup,
+  Stack,
+  Button,
+  Center,
+  NativeBaseProvider,
+} from 'native-base';
+import {useNavigation} from '@react-navigation/native';
 
-const Login = () => {
-  return <NativeBaseProvider>
-    <Center w="100%" h="100%">
-     <Box w="100%" h="100%" bgColor="indigo.200" alignItems="center">
-        <Box safeArea p="1" py="60" w="100%" maxW="300">
+const LoginScreen = () => {
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+  const [value, setValue] = useState('one');
 
-        <Heading size="lg" fontWeight="700" color="coolGray.800" _dark={{
-            color: "warmGray.800"
-        }}>
-          Welcome!!
-        </Heading>
-        <Heading mt="1" _dark={{
-        color: "warmGray.900"
-    }} color="coolGray.900" fontWeight="700" size="xs">
-          Sign in to continue!
-        </Heading>
-        <Text fontWeight="400" fontFamily="" py="5" color="warmGray.500">Choose Your Role</Text>
-        <Radio.Group name="exampleGroup" defaultValue="1" accessibilityLabel="pick a size">
-      <Stack direction={{
-      base: "row",
-      md: "row"
-    }} alignItems={{
-      base: "flex-start",
-      md: "center"
-    }} space={4} w="75%" maxW="300px" py="0">
-        <Radio value="1" colorScheme="indigo" size="sm" my={1}>
-          Admin
-        </Radio>
-        <Radio value="2" colorScheme="green" size="sm" my={1}>
-        Seller
-        </Radio>
-        <Radio value="3" colorScheme="green" size="sm" my={1}>
-          Buyer
-        </Radio>
-      </Stack>
-    </Radio.Group>
+  const onSignInButtonPress = async () => {};
 
-        <VStack space={3} mt="5">
-          <FormControl>
-            <FormControl.Label>Username</FormControl.Label>
-            <Input variant="rounded" placeholder="Username"  borderColor="gray.500" />
-          </FormControl>
-          <FormControl>
-            <FormControl.Label>Password</FormControl.Label>
-            <Input variant="rounded" type="password" placeholder="password" borderColor="gray.500" />
-            <Link _text={{
-                fontSize: "xs",
-                fontWeight: "500",
-            color: "indigo.500"
-        }} alignSelf="flex-end" mt="1">
-              Forget Password?
-            </Link>
-          </FormControl>
-          <Button mt="5" colorScheme="indigo" borderRadius="25">
-            Sign in
-          </Button>
-          <HStack mt="6" justifyContent="center">
-            <Text fontSize="sm" color="coolGray.600" _dark={{
-            color: "warmGray.200"
-          }}>
-              I'm a new user.{" "}
-            </Text>
-            <Link _text={{
-            color: "indigo.500",
-            fontWeight: "medium",
-            fontSize: "sm"
-          }} href="#">
-              Register
-            </Link>
-          </HStack>
-        </VStack>
-      </Box>
-      </Box>
-    </Center>
-        </NativeBaseProvider>
+  const navigation = useNavigation();
+
+  return (
+    <NativeBaseProvider>
+      <Center w="100%" h="100%">
+        <Box w="100%" h="100%" bgColor="white" alignItems="center">
+          <Box safeArea p="1" py="60" w="100%" maxW="300">
+            <VStack space="4">
+              <Heading
+                size="lg"
+                fontWeight="700"
+                color="coolGray.800"
+                _dark={{
+                  color: 'warmGray.800',
+                }}>
+                Welcome!!
+              </Heading>
+              <Heading
+                mt="1"
+                _dark={{
+                  color: 'warmGray.900',
+                }}
+                color="coolGray.900"
+                fontWeight="700"
+                size="xs">
+                Sign in to continue!
+              </Heading>
+              <Text fontWeight="400" fontFamily="" py="5" color="warmGray.500">
+                Choose Your Role
+              </Text>
+              <Radio.Group
+                style={{flexDirection: 'row'}}
+                status="control"
+                value={value}
+                onChange={nextValue => {
+                  setValue(nextValue);
+                }}>
+                <Stack
+                  direction={{
+                    base: 'row',
+                    md: 'row',
+                  }}
+                  alignItems={{
+                    base: 'flex-start',
+                    md: 'center',
+                  }}
+                  space={4}
+                  w="75%"
+                  maxW="300px">
+                  <Radio value="one">Admin</Radio>
+                  <Radio value="two">Seller</Radio>
+                  <Radio value="three">Buyer</Radio>
+                </Stack>
+              </Radio.Group>
+
+              <VStack space={3} mt="5">
+                <FormControl>
+                  <FormControl.Label>Username</FormControl.Label>
+                  <Input
+                    placeholder="Enter Name"
+                    borderRadius="25"
+                    value={name}
+                    onChangeText={setName}
+                    borderColor="gray.500"
+                  />
+                </FormControl>
+                <FormControl>
+                  <FormControl.Label>Password</FormControl.Label>
+                  <Input
+                    type="password"
+                    borderRadius="25"
+                    placeholder="Enter password"
+                    value={password}
+                    onChangeText={setPassword}
+                    borderColor="gray.500"
+                  />
+                </FormControl>
+                <Button
+                  mt="10"
+                  bg="#008080"
+                  borderRadius="25"
+                  onPress={() => navigation.navigate('Seller')}>
+                  Sign in
+                </Button>
+              </VStack>
+            </VStack>
+          </Box>
+        </Box>
+      </Center>
+    </NativeBaseProvider>
+  );
 };
 
-    export default Login;
-    
+export default LoginScreen;
